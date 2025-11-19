@@ -1,27 +1,30 @@
-# Software Developer Kit – Practice 01  
-### Initial Setup and Configuration  
-**Alumno:** Aníbal Bayas  
-**Asignatura:** Software Developer Kit  
+# Software Developer Kit – Práctica 01
+Alumno: Aníbal Bayas  
+Asignatura: Software Developer Kit  
 
----
+## Objetivo
+Configurar el entorno de desarrollo y comprobar el funcionamiento de Git, GitHub, Node.js, PHP, HTML y CSS. Además, organizar los archivos del proyecto y subirlos correctamente a un repositorio.
 
-## 📌 Objetivo de la práctica
-Esta práctica consiste en:
+## Git y GitHub
+Se instaló Git, se configuró el usuario, se creó un repositorio local y se conectó a GitHub. Todo el contenido del proyecto fue subido correctamente al repositorio.
 
-1. Configurar correctamente el entorno de desarrollo.
-2. Instalar y usar Git con GitHub.
-3. Instalar Node.js y crear un servidor básico.
-4. Instalar PHP (XAMPP/WAMP) y comprobar su funcionamiento.
-5. Crear una página web simple con HTML y CSS.
-6. Organizar un proyecto dentro del repositorio.
-7. Subirlo a GitHub siguiendo buenas prácticas.
+## Node.js
+Se instaló Node.js y se comprobó su funcionamiento creando un servidor básico para verificar que el entorno funcionaba correctamente.
 
----
+## PHP (XAMPP)
+Se instaló XAMPP y se probó el funcionamiento de PHP mediante un archivo sencillo que confirmó que la instalación estaba correctamente configurada.
 
-# ✅ 1. Instalación y configuración de Git
-- Git instalado desde la web oficial.  
-- Configuración inicial realizada:
+## Página Web Básica
+Se creó una página HTML con un archivo CSS asociado para comprobar la estructura mínima de un proyecto web.
 
-```bash
-git config --global user.name "Aníbal Bayas"
-git config --global user.email "anibal@example.com"
+## Estructura del Proyecto
+El repositorio contiene:
+- Carpeta ecommerce: backend desarrollado con Laravel.
+- Carpeta frontend: interfaz web creada con HTML, CSS y JavaScript.
+- Archivos básicos de la práctica (HTML, CSS y servidor Node.js).
+
+## Conclusión
+El entorno de desarrollo fue configurado correctamente y todos los componentes (Git, Node.js, PHP, HTML y CSS) funcionan sin problemas. El proyecto está organizado y publicado en GitHub.
+
+Repositorio:  
+https://github.com/anibalbg/E-commerce-proyect
