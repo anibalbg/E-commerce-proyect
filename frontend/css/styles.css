@@ -1,0 +1,437 @@
+/* ===========================
+   GolfStore - styles.css PRO
+   =========================== */
+
+:root {
+    --bg1: #0d1321;
+    --bg2: #1e293b;
+    --bg3: #0f172a;
+    --accent: #3b82f6;
+    --accent-strong: #1e40af;
+    --success: #22c55e;
+    --danger: #ef4444;
+    --text-main: #f9fafb;
+    --text-muted: #9ca3af;
+    --border-soft: rgba(148, 163, 184, 0.5);
+}
+
+/* Fondo global */
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-main);
+    background: linear-gradient(135deg, var(--bg1), var(--bg2), var(--bg3));
+    background-size: 200% 200%;
+    animation: gradient-move 16s ease infinite;
+}
+
+/* Animación del gradiente */
+@keyframes gradient-move {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* ==========
+   NAVBAR
+   ========== */
+.navbar {
+    background: rgba(15, 23, 42, 0.93) !important;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-bottom: 1px solid var(--border-soft);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    color: #22c55e !important;
+}
+
+    .navbar-brand span {
+        color: #e5e7eb;
+        font-weight: 300;
+    }
+
+.navbar .btn-outline-light {
+    border-radius: 999px;
+    border-width: 1px;
+}
+
+/* Contenedor principal tipo "glass" */
+.page-shell {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 24px;
+    border-radius: 22px;
+    background: radial-gradient(circle at top left, rgba(148, 163, 184, 0.15), transparent), radial-gradient(circle at bottom right, rgba(37, 99, 235, 0.18), transparent);
+}
+
+/* ==========
+   TARJETAS GLASS
+   ========== */
+
+.glass-card,
+.product-card,
+.admin-card,
+.cart-item,
+.admin-table,
+.order-table {
+    background: rgba(15, 23, 42, 0.72);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-radius: 18px;
+    border: 1px solid var(--border-soft);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+}
+
+/* Espaciados genéricos de las tarjetas que son contenedores */
+.admin-card,
+.cart-item,
+.admin-table,
+.order-table {
+    padding: 20px;
+}
+
+/* ==========
+   TITULOS / TEXTOS
+   ========== */
+
+h1, h2, h3, h4, h5 {
+    color: #e5e7eb;
+}
+
+.text-muted, .text-secondary {
+    color: var(--text-muted) !important;
+}
+
+/* ==========
+   BOTONES
+   ========== */
+
+.btn-primary,
+.btn-success,
+.btn-add,
+.checkout-btn,
+.btn-back {
+    border-radius: 999px;
+    border: none;
+    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.5);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+    .btn-primary:hover,
+    .btn-success:hover,
+    .btn-add:hover,
+    .checkout-btn:hover,
+    .btn-back:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 14px 30px rgba(37, 99, 235, 0.65);
+        opacity: 0.95;
+    }
+
+.btn-danger {
+    border-radius: 999px;
+}
+
+/* Botón carrito navbar */
+.btn-cart {
+    background: linear-gradient(135deg, #22c55e, #15803d);
+    border-radius: 999px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 10px 22px rgba(22, 163, 74, 0.5);
+}
+
+    .btn-cart:hover {
+        opacity: 0.95;
+    }
+
+/* Checkout */
+.checkout-btn {
+    background: linear-gradient(135deg, #22c55e, #15803d);
+}
+
+/* ==========
+   PRODUCTOS
+   ========== */
+
+.product-card {
+    padding: 20px;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    position: relative;
+}
+
+    .product-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
+        border-color: rgba(96, 165, 250, 0.8);
+    }
+
+    .product-card h5 {
+        margin-bottom: 6px;
+    }
+
+    .product-card p {
+        margin-bottom: 4px;
+    }
+
+/* AGOTADO */
+.out-of-stock {
+    position: absolute;
+    top: 12px;
+    left: -18px;
+    background: #e11d48;
+    color: white;
+    padding: 4px 18px;
+    transform: rotate(-20deg);
+    font-size: 13px;
+    border-radius: 4px;
+    box-shadow: 0 8px 20px rgba(190, 24, 93, 0.7);
+}
+
+/* ==========
+   BUSCADOR
+   ========== */
+
+.search-wrapper {
+    max-width: 520px;
+}
+
+.search-input {
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    background: rgba(15, 23, 42, 0.9);
+    color: #e5e7eb;
+    padding: 10px 16px;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.9);
+}
+
+    .search-input::placeholder {
+        color: rgba(148, 163, 184, 0.9);
+    }
+
+/* ==========
+   CATEGORÍAS
+   ========== */
+
+#categoryFilters {
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.badge-category {
+    background: rgba(15, 23, 42, 0.85);
+    color: #e5e7eb;
+    border-radius: 999px;
+    padding: 6px 14px;
+    cursor: pointer;
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.16s ease, color 0.16s ease, transform 0.16s;
+}
+
+    .badge-category.active {
+        background: linear-gradient(135deg, #22c55e, #16a34a);
+        color: white;
+        border-color: transparent;
+        transform: translateY(-1px);
+    }
+
+/* ==========
+   ADMIN PANEL
+   ========== */
+
+.admin-card {
+    margin-bottom: 24px;
+}
+
+.admin-title {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#editProductForm {
+    margin-bottom: 24px;
+}
+
+    /* Inputs/Selects en admin */
+    .admin-card .form-control,
+    .admin-card .form-select,
+    #editProductForm .form-control {
+        background: rgba(15, 23, 42, 0.9);
+        border-radius: 12px;
+        border: 1px solid rgba(148, 163, 184, 0.7);
+        color: #e5e7eb;
+    }
+
+        .admin-card .form-control::placeholder,
+        #editProductForm .form-control::placeholder {
+            color: rgba(148, 163, 184, 0.9);
+        }
+
+/* ==========
+   TABLAS (admin & historial)
+   ========== */
+
+.admin-table table,
+.order-table table {
+    color: #e5e7eb;
+    margin-bottom: 0;
+}
+
+.admin-table thead th,
+.order-table thead th {
+    background: rgba(15, 23, 42, 0.95);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.7);
+}
+
+.admin-table tbody tr:nth-child(even),
+.order-table tbody tr:nth-child(even) {
+    background: rgba(15, 23, 42, 0.8);
+}
+
+.status {
+    font-weight: 700;
+}
+
+/* ==========
+   CARRITO
+   ========== */
+
+.cart-item {
+    margin-bottom: 16px;
+}
+
+.remove-btn {
+    background: #ef4444;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-weight: 600;
+    box-shadow: 0 10px 22px rgba(239, 68, 68, 0.5);
+}
+
+    .remove-btn:hover {
+        background: #dc2626;
+    }
+
+.empty-message {
+    color: #e5e7eb;
+}
+
+/* Panel acciones carrito */
+.cart-actions-card {
+    background: rgba(15, 23, 42, 0.85);
+    border-radius: 18px;
+    border: 1px solid var(--border-soft);
+    padding: 18px;
+}
+
+/* ==========
+   FOOTER
+   ========== */
+
+.site-footer {
+    color: rgba(209, 213, 219, 0.9);
+}
+
+/* ==========
+   AUTH (index.html)
+   ========== */
+
+/* body solo en la página de login/registro */
+.auth-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cubos de login/registro */
+.auth-card {
+    width: 380px;
+    background: rgba(15, 23, 42, 0.92);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-radius: 22px;
+    padding: 28px 26px 26px;
+    color: white;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(148, 163, 184, 0.8);
+}
+
+    .auth-card h2 {
+        text-align: center;
+        margin-bottom: 18px;
+        font-weight: 600;
+    }
+
+/* Inputs auth */
+.auth-input {
+    width: 100%;
+    margin-bottom: 14px;
+    padding: 10px 14px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(148, 163, 184, 0.9);
+    background: rgba(15, 23, 42, 0.9);
+    color: white;
+    outline: none;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.95);
+}
+
+    .auth-input::placeholder {
+        color: rgba(148, 163, 184, 0.9);
+    }
+
+/* Botón auth */
+.auth-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 0 14px 35px rgba(22, 163, 74, 0.7);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
+}
+
+    .auth-btn:hover {
+        transform: translateY(-1px);
+        opacity: 0.97;
+        box-shadow: 0 18px 45px rgba(22, 163, 74, 0.8);
+    }
+
+/* Switch login/register */
+.auth-switch {
+    margin-top: 16px;
+    text-align: center;
+    cursor: pointer;
+    color: #bef264;
+    font-size: 15px;
+}
+
+    .auth-switch:hover {
+        text-decoration: underline;
+    }
