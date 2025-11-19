@@ -1,6 +1,6 @@
-/* ===========================
+/* 
    GolfStore - styles.css PRO
-   =========================== */
+   */
 
 :root {
     --bg1: #0d1321;
@@ -41,9 +41,9 @@ body {
     }
 }
 
-/* ==========
+/* 
    NAVBAR
-   ========== */
+    */
 .navbar {
     background: rgba(15, 23, 42, 0.93) !important;
     backdrop-filter: blur(18px);
@@ -78,9 +78,9 @@ body {
     background: radial-gradient(circle at top left, rgba(148, 163, 184, 0.15), transparent), radial-gradient(circle at bottom right, rgba(37, 99, 235, 0.18), transparent);
 }
 
-/* ==========
+/* 
    TARJETAS GLASS
-   ========== */
+    */
 
 .glass-card,
 .product-card,
@@ -104,9 +104,9 @@ body {
     padding: 20px;
 }
 
-/* ==========
+/* 
    TITULOS / TEXTOS
-   ========== */
+    */
 
 h1, h2, h3, h4, h5 {
     color: #e5e7eb;
@@ -116,9 +116,9 @@ h1, h2, h3, h4, h5 {
     color: var(--text-muted) !important;
 }
 
-/* ==========
+/* 
    BOTONES
-   ========== */
+    */
 
 .btn-primary,
 .btn-success,
@@ -167,9 +167,9 @@ h1, h2, h3, h4, h5 {
     background: linear-gradient(135deg, #22c55e, #15803d);
 }
 
-/* ==========
+/* 
    PRODUCTOS
-   ========== */
+    */
 
 .product-card {
     padding: 20px;
@@ -205,9 +205,9 @@ h1, h2, h3, h4, h5 {
     box-shadow: 0 8px 20px rgba(190, 24, 93, 0.7);
 }
 
-/* ==========
+/* 
    BUSCADOR
-   ========== */
+    */
 
 .search-wrapper {
     max-width: 520px;
@@ -226,9 +226,9 @@ h1, h2, h3, h4, h5 {
         color: rgba(148, 163, 184, 0.9);
     }
 
-/* ==========
+/* 
    CATEGORÍAS
-   ========== */
+    */
 
 #categoryFilters {
     gap: 10px;
@@ -254,9 +254,9 @@ h1, h2, h3, h4, h5 {
         transform: translateY(-1px);
     }
 
-/* ==========
+/* 
    ADMIN PANEL
-   ========== */
+    */
 
 .admin-card {
     margin-bottom: 24px;
@@ -286,9 +286,9 @@ h1, h2, h3, h4, h5 {
             color: rgba(148, 163, 184, 0.9);
         }
 
-/* ==========
+/* 
    TABLAS (admin & historial)
-   ========== */
+    */
 
 .admin-table table,
 .order-table table {
@@ -311,9 +311,9 @@ h1, h2, h3, h4, h5 {
     font-weight: 700;
 }
 
-/* ==========
+/* 
    CARRITO
-   ========== */
+    */
 
 .cart-item {
     margin-bottom: 16px;
@@ -345,17 +345,17 @@ h1, h2, h3, h4, h5 {
     padding: 18px;
 }
 
-/* ==========
+/* 
    FOOTER
-   ========== */
+    */
 
 .site-footer {
     color: rgba(209, 213, 219, 0.9);
 }
 
-/* ==========
+/* 
    AUTH (index.html)
-   ========== */
+    */
 
 /* body solo en la página de login/registro */
 .auth-body {

@@ -27,7 +27,7 @@ class ProductController extends Controller
         return response()->json($query->get());
     }
 
-    // 
+     
     //  VER PRODUCTO INDIVIDUAL
     public function show($id)
     {
@@ -40,8 +40,7 @@ class ProductController extends Controller
         return response()->json($product);
     }
 
-    // 
-    //  CREAR PRODUCTO (ADMIN)
+        //  CREAR PRODUCTO (ADMIN)
     public function store(Request $request)
     {
         $request->validate([
@@ -75,8 +74,7 @@ class ProductController extends Controller
     }
 
     //  ACTUALIZAR PRODUCTO (ADMIN)
-    // 
-    public function update(Request $request, $id)
+        public function update(Request $request, $id)
     {
         $product = Product::find($id);
 
@@ -113,10 +111,8 @@ class ProductController extends Controller
         ]);
     }
 
-    // 
-    //  ELIMINAR PRODUCTO (ADMIN)
-    // 
-    public function destroy($id)
+        //  ELIMINAR PRODUCTO (ADMIN)
+        public function destroy($id)
     {
         $product = Product::find($id);
 
@@ -133,9 +129,8 @@ class ProductController extends Controller
         return response()->json(['message' => 'Product deleted successfully']);
     }
 
-    // 
+
     //  REPOSICIÓN DE STOCK (ADMIN)
-    // 
     public function restock(Request $request, $id)
     {
         $request->validate([
