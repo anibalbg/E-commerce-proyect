@@ -1,6 +1,4 @@
-﻿
-
-async function loadOrders() {
+﻿async function loadOrders() {
     try {
         const orders = await apiFetch("/orders");
         renderOrders(orders);

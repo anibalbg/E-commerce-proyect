@@ -1,7 +1,4 @@
-﻿// ================================================
-//            GolfStore - admin-users.js
-// ================================================
-
+﻿
 async function loadUsers() {
     try {
         const users = await apiFetch("/users");

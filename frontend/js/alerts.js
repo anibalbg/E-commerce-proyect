@@ -1,6 +1,3 @@
-// ================================================
-//            GolfStore - alerts.js PRO
-// ================================================
 
 function showAlert(message, type = "info") {
     // Contenedor dinámico de alertas

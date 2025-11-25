@@ -1,15 +1,9 @@
-﻿// ================================================
-//                 GolfStore - home.js
-// ================================================
-
-// Estado global
+﻿// Estado global
 let productsCache = [];
 let currentCategory = "all";
 let currentSearch = "";
 
-// ================================================
 //               INICIO DE PÁGINA
-// ================================================
 async function initPage() {
     const user = JSON.parse(localStorage.getItem("user"));
     const token = localStorage.getItem("token");
@@ -36,9 +30,7 @@ async function initPage() {
     await loadProducts();
 }
 
-// ================================================
 //               CATEGORÍAS
-// ================================================
 async function loadCategories() {
     try {
         const categories = await apiFetch("/categories");
@@ -83,17 +75,14 @@ function filterByCategory(categoryId, evt) {
     loadProducts();
 }
 
-// ================================================
 //                 BUSCADOR
-// ================================================
+
 function searchProducts() {
     currentSearch = document.getElementById("searchInput").value.trim();
     loadProducts();
 }
 
-// ================================================
 //             CARGAR PRODUCTOS
-// ================================================
 async function loadProducts() {
     try {
         let url = "/products";
@@ -114,9 +103,7 @@ async function loadProducts() {
     }
 }
 
-// ================================================
 //           RENDER TARJETAS PRODUCTOS
-// ================================================
 function renderProducts(products) {
     const container = document.getElementById("products");
     container.innerHTML = "";
@@ -181,9 +168,7 @@ function renderProducts(products) {
     });
 }
 
-// ================================================
 //                  REPOSICIÓN
-// ================================================
 async function restock(id) {
     const input = document.getElementById(`restock-${id}`);
     const qty = parseInt(input?.value || "0");
@@ -207,9 +192,7 @@ async function restock(id) {
     }
 }
 
-// ================================================
 //                 CARRITO
-// ================================================
 function addToCart(id, name, price) {
     const cart = JSON.parse(localStorage.getItem("cart") || "[]");
     const existing = cart.find(i => i.id === id);
@@ -232,9 +215,7 @@ function goToCart() {
     window.location.href = "cart.html";
 }
 
-// ================================================
 //                CRUD ADMIN
-// ================================================
 async function createProduct() {
     const body = {
         name: document.getElementById("name").value,
@@ -314,9 +295,7 @@ async function deleteProduct(id) {
     }
 }
 
-// ================================================
 //                     LOGOUT
-// ================================================
 function logout() {
     localStorage.removeItem("token");
     localStorage.removeItem("user");

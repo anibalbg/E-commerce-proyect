@@ -1,7 +1,4 @@
-﻿// ================================
-//         Helpers comunes
-// ================================
-function getInputValue(id) {
+﻿function getInputValue(id) {
     const el = document.getElementById(id);
     return el ? el.value.trim() : "";
 }
@@ -16,9 +13,7 @@ function notify(message, type = "danger") {
     }
 }
 
-// ================================
 //            LOGIN
-// ================================
 async function login() {
     // Soporta tanto index.html (loginEmail/loginPassword)
     // como auth.html antiguo (email/password)
@@ -53,9 +48,7 @@ async function login() {
     }
 }
 
-// ================================
 //          REGISTRO
-// ================================
 async function register() {
     // Soporta index.html (regName/regEmail/regPassword)
     // y auth.html antiguo (name/regEmail/regPassword)

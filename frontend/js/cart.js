@@ -1,8 +1,4 @@
-﻿// ================================================
-//            GolfStore - cart.js
-// ================================================
-
-// Mostrar carrito
+﻿// Mostrar carrito
 function showCart() {
     const cart = JSON.parse(localStorage.getItem("cart") || "[]");
     const cartDiv = document.getElementById("cart");
