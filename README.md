@@ -23,8 +23,5 @@ El repositorio contiene:
 - Carpeta frontend: interfaz web creada con HTML, CSS y JavaScript.
 - Archivos básicos de la práctica (HTML, CSS y servidor Node.js).
 
-## Conclusión
-El entorno de desarrollo fue configurado correctamente y todos los componentes (Git, Node.js, PHP, HTML y CSS) funcionan sin problemas. El proyecto está organizado y publicado en GitHub.
-
 Repositorio:  
 https://github.com/anibalbg/E-commerce-proyect
