@@ -1,4 +1,4 @@
-# Software Developer Kit – Práctica 01
+# Software Developer Kit 
 Alumno: Aníbal Bayas  
 Asignatura: Software Developer Kit  
 
